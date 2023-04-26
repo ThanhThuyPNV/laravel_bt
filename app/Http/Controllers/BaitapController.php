@@ -10,7 +10,7 @@ class BaitapController extends Controller
     // public function hello(){
     //     // echo '<h1>Chào mừng các bạn đến với chanel của chúng tôi!!!</h1>';
     //     // $title = "Đây là biến";
-    //     // return view('test')->with('title', $title); // with là lưu 1 biến trả về
+    //     // return view('test')->with('title', $title); // with, compac là chứa các biến trả về
     //     // lưu biến và truyền biến qua view
 
     //     // tạo mảng
@@ -20,9 +20,7 @@ class BaitapController extends Controller
     //     $arr = ['name' => $name,'age' => $age, 'class' => $class];
     //     return view('test')->with('student', $arr);
     // }
-    public function sum(){
-        return $a + $b;
-    }
+
     public function tinhtong(Request $request){
         $sum = $request->soA + $request->soB;
         return view('sum', compact('sum'));

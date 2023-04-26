@@ -35,7 +35,9 @@ Route::get('/computeArea',[App\http\Controllers\AreaofshapeController::class,'co
 Route::post('/computeArea',[App\http\Controllers\AreaofshapeController::class,'computeArea']);
 
 
+Route::get('/signup',[App\http\Controllers\signupController::class,'index']);
 
+Route::post('/signup',[App\http\Controllers\signupController::class,'displayInfor']);
 // require_once __DIR__.'/functions.php';
 
 // Route::get('/sum', function () {
